@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoptforce - Investor & Client Presentation 2025</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="bg-gradient"></div>
+    <canvas id="bg-canvas"></canvas>
+    
+    <div class="logo">
+        <span>λ</span>doptforce
+    </div>
+
+    <div class="progress-bar" id="progress-bar"></div>
+
+    <div class="controls">
+        <button class="control-btn" id="prev-btn"><i data-lucide="chevron-left"></i></button>
+        <button class="control-btn" id="next-btn"><i data-lucide="chevron-right"></i></button>
+    </div>
+
+    <div class="presentation">
+        
+        <!-- SLIDE 1: COVER / HERO -->
+        <div class="slide flex-col justify-center align-center" style="text-align: center;">
+            <div class="badge">INVESTOR / CLIENT-FACING OVERVIEW · 2025</div>
+            <h1 style="max-width: 900px; margin: 0 auto 1.5rem auto;">Transforming Businesses Through Salesforce Innovation & Digital Excellence</h1>
+            <p class="subtitle" style="margin: 0 auto 4rem auto;">The strategic execution partner for CRM transformation, AI automation, mobile products and revenue operations.</p>
+            
+            <!-- Abstract center graphic -->
+            <div style="position: relative; width: 300px; height: 300px; margin: 0 auto; display: flex; align-items: center; justify-content: center;">
+                <div style="position: absolute; width: 100%; height: 100%; border: 1px dashed rgba(0, 180, 216, 0.4); border-radius: 50%; animation: spin 20s linear infinite;"></div>
+                <div style="position: absolute; width: 70%; height: 70%; border: 1px solid rgba(0, 180, 216, 0.2); border-radius: 50%;"></div>
+                <i data-lucide="cloud" style="width: 80px; height: 80px; color: var(--accent-cyan); filter: drop-shadow(0 0 20px rgba(0,180,216,0.8));"></i>
+            </div>
+            <style>
+                @keyframes spin { 100% { transform: rotate(360deg); } }
+            </style>
+        </div>
+
+        <!-- SLIDE 2: COMPANY OVERVIEW -->
+        <div class="slide">
+            <h2 style="margin-top: 2rem;">About Adoptforce</h2>
+            <p class="subtitle">A strategic Salesforce and digital engineering partner focused on secure, scalable, business-aligned technology execution.</p>
+            
+            <div class="grid-2 mt-auto" style="gap: 3rem;">
+                <div class="glass-card border-cyan flex-col justify-center">
+                    <div class="stat-number">40+</div>
+                    <div class="stat-label mb-2">Satisfied Clients</div>
+                    
+                    <div class="stat-number" style="margin-top: 1.5rem;">100+</div>
+                    <div class="stat-label mb-2">Projects Delivered</div>
+                    
+                    <div class="stat-number" style="margin-top: 1.5rem;">400+</div>
+                    <div class="stat-label">Years of Combined Team Experience</div>
+                </div>
+                
+                <div class="flex-col gap-1">
+                    <div class="glass-card border-cyan">
+                        <h3 style="margin-bottom: 0.5rem; color: var(--accent-cyan);"><i data-lucide="target" style="display:inline; vertical-align:middle; margin-right: 8px;"></i> Mission</h3>
+                        <p>Help enterprises convert Salesforce and modern software into measurable gains in growth, operational efficiency, and customer experience.</p>
+                    </div>
+                    <div class="glass-card border-cyan">
+                        <h3 style="margin-bottom: 0.5rem; color: var(--accent-cyan);"><i data-lucide="eye" style="display:inline; vertical-align:middle; margin-right: 8px;"></i> Vision</h3>
+                        <p>Become the most trusted digital transformation partner for organizations building the next generation of CRM, mobile-first, and AI-enabled operations.</p>
+                    </div>
+                    <div class="glass-card border-cyan">
+                        <h3 style="margin-bottom: 0.5rem; color: var(--accent-cyan);"><i data-lucide="globe" style="display:inline; vertical-align:middle; margin-right: 8px;"></i> Delivery Model</h3>
+                        <p>Local consulting rigor with global execution capacity. Flexible engagement structures and follow-the-sun support coverage.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer">Positioned for organizations that demand speed, enterprise rigor, and deep Salesforce ecosystem expertise.</div>
+        </div>
+
+        <!-- SLIDE 3: CORE CAPABILITIES -->
+        <div class="slide">
+            <h2 style="margin-top: 2rem;">What We Deliver</h2>
+            <p class="subtitle">Integrated services that move from strategy through architecture, product delivery, and long-term optimization.</p>
+            
+            <div class="grid-2 gap-2 mt-auto">
+                <div class="glass-card border-cyan">
+                    <div class="flex-row align-center mb-1" style="margin-bottom: 1rem;">
+                        <i data-lucide="cloud" style="color: var(--accent-cyan); margin-right: 1rem; width: 32px; height: 32px;"></i>
+                        <h3 style="color: white; font-size: 1.25rem;">Salesforce Services</h3>
+                    </div>
+                    <p style="color: var(--text-secondary);">Full Salesforce cloud coverage — Sales Cloud, Service Cloud, Experience Cloud, Marketing Cloud, CPQ, and custom AppExchange applications. End-to-end configuration, custom development, and ecosystem integration.</p>
+                </div>
+                
+                <div class="glass-card border-gold">
+                    <div class="flex-row align-center mb-1" style="margin-bottom: 1rem;">
+                        <i data-lucide="trending-up" style="color: var(--accent-gold); margin-right: 1rem; width: 32px; height: 32px;"></i>
+                        <h3 style="color: white; font-size: 1.25rem;">GTM Strategy</h3>
+                    </div>
+                    <p style="color: var(--text-secondary);">Revenue operations architecture, ICP and product positioning, sales enablement, CRM optimization, and customer acquisition strategy aligned to pipeline performance.</p>
+                </div>
+                
+                <div class="glass-card border-teal">
+                    <div class="flex-row align-center mb-1" style="margin-bottom: 1rem;">
+                        <i data-lucide="smartphone" style="color: #20C997; margin-right: 1rem; width: 32px; height: 32px;"></i>
+                        <h3 style="color: white; font-size: 1.25rem;">Mobile App Development</h3>
+                    </div>
+                    <p style="color: var(--text-secondary);">Native, hybrid, and cross-platform mobile applications for iOS and Android. Offline-first design, Salesforce Mobile SDK integration, and field operations experience design.</p>
+                </div>
+                
+                <div class="glass-card border-red">
+                    <div class="flex-row align-center mb-1" style="margin-bottom: 1rem;">
+                        <i data-lucide="cpu" style="color: var(--accent-red); margin-right: 1rem; width: 32px; height: 32px;"></i>
+                        <h3 style="color: white; font-size: 1.25rem;">AI & Automation</h3>
+                    </div>
+                    <p style="color: var(--text-secondary);">Workflow automation, Einstein AI integration, external AI tool orchestration, intelligent process optimization, and predictive analytics — embedded directly into Salesforce operations.</p>
+                </div>
+            </div>
+            <div class="slide-footer" style="margin-top: 3rem;">One strategic partner for Salesforce transformation, digital products, and operational scale.</div>
+        </div>
+
+        <!-- SLIDE 4: SALESFORCE APP DEVELOPMENT EXPERTISE -->
+        <div class="slide">
+            <h2 style="margin-top: 2rem;">AppExchange & Custom Salesforce Engineering</h2>
+            <p class="subtitle">From product vision to AppExchange security review — Adoptforce builds secure, packaged, extensible Salesforce applications at enterprise scale.</p>
+            
+            <div class="flow-diagram">
+                <div class="flow-node">Product Blueprint</div>
+                <div class="flow-arrow"></div>
+                <div class="flow-node">Managed Package</div>
+                <div class="flow-arrow"></div>
+                <div class="flow-node">Lightning UX</div>
+                <div class="flow-arrow"></div>
+                <div class="flow-node">Apex + Automation</div>
+                <div class="flow-arrow"></div>
+                <div class="flow-node">APIs + Data</div>
+                <div class="flow-arrow"></div>
+                <div class="flow-node">Security + Scale</div>
+            </div>
+
+            <div class="grid-2 gap-2 glass-card">
+                <div>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 1rem; display: flex; align-items: center;"><i data-lucide="check-circle" style="color: var(--accent-cyan); margin-right: 10px;"></i> Custom AppExchange App Development</li>
+                        <li style="margin-bottom: 1rem; display: flex; align-items: center;"><i data-lucide="check-circle" style="color: var(--accent-cyan); margin-right: 10px;"></i> Managed Package Architecture</li>
+                        <li style="margin-bottom: 1rem; display: flex; align-items: center;"><i data-lucide="check-circle" style="color: var(--accent-cyan); margin-right: 10px;"></i> Lightning Web Components (LWC)</li>
+                        <li style="margin-bottom: 1rem; display: flex; align-items: center;"><i data-lucide="check-circle" style="color: var(--accent-cyan); margin-right: 10px;"></i> Apex & Flow Automation</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 1rem; display: flex; align-items: center;"><i data-lucide="check-circle" style="color: var(--accent-cyan); margin-right: 10px;"></i> Third-Party API Integrations</li>
+                        <li style="margin-bottom: 1rem; display: flex; align-items: center;"><i data-lucide="check-circle" style="color: var(--accent-cyan); margin-right: 10px;"></i> Secure & Compliant Architecture</li>
+                        <li style="margin-bottom: 1rem; display: flex; align-items: center;"><i data-lucide="check-circle" style="color: var(--accent-cyan); margin-right: 10px;"></i> Scalable Data Modeling</li>
+                        <li style="margin-bottom: 1rem; display: flex; align-items: center;"><i data-lucide="check-circle" style="color: var(--accent-cyan); margin-right: 10px;"></i> Release Governance & Versioning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 5: GTM + REVOPS ACCELERATION -->
+        <div class="slide">
+            <h2 style="margin-top: 2rem;">Go-To-Market Strategy Services</h2>
+            <p class="subtitle">Adoptforce aligns product narrative, pipeline architecture, and CRM execution so teams launch faster, acquire more efficiently, and scale repeatably.</p>
+            
+            <div class="flow-diagram" style="margin: 2rem 0;">
+                <div class="flow-node">1. Position</div><div class="flow-arrow"></div>
+                <div class="flow-node">2. Plan</div><div class="flow-arrow"></div>
+                <div class="flow-node">3. Acquire</div><div class="flow-arrow"></div>
+                <div class="flow-node">4. Enable</div><div class="flow-arrow"></div>
+                <div class="flow-node">5. Measure</div><div class="flow-arrow"></div>
+                <div class="flow-node">6. Scale</div>
+            </div>
+
+            <div class="grid-3 mt-auto">
+                <div class="glass-card">
+                    <h3 style="color: var(--accent-gold); margin-bottom: 1rem;">Pipeline Visibility</h3>
+                    <p style="font-size: 0.95rem; color: var(--text-secondary);">Executive dashboards, stage governance, forecast hygiene.</p>
+                </div>
+                <div class="glass-card">
+                    <h3 style="color: var(--accent-gold); margin-bottom: 1rem;">Sales + Marketing Alignment</h3>
+                    <p style="font-size: 0.95rem; color: var(--text-secondary);">Lead scoring, routing, nurture, and enablement loops.</p>
+                </div>
+                <div class="glass-card">
+                    <h3 style="color: var(--accent-gold); margin-bottom: 1rem;">Revenue Operations Automation</h3>
+                    <p style="font-size: 0.95rem; color: var(--text-secondary);">Repeatable processes from first inquiry through renewal.</p>
+                </div>
+            </div>
+            
+            <div class="slide-footer">Faster launch execution · Stronger customer acquisition motion · Cleaner CRM performance signals</div>
+        </div>
+
+        <!-- SLIDE 6: MOBILE APP DEVELOPMENT -->
+        <div class="slide">
+            <h2 style="margin-top: 2rem;">Enterprise Mobility Solutions</h2>
+            <p class="subtitle">Mobile-first strategy and Salesforce-integrated experiences for field operations, enterprise teams, and customer-facing digital products.</p>
+            
+            <div style="margin-bottom: 2rem;">
+                <span class="badge">Native iOS</span>
+                <span class="badge">Native Android</span>
+                <span class="badge">React Native</span>
+                <span class="badge">Flutter</span>
+                <span class="badge" style="border-color: var(--accent-cyan); color: white; background: var(--accent-cyan);">Salesforce Mobile SDK</span>
+                <span class="badge">Offline-First Architecture</span>
+            </div>
+
+            <div class="grid-2 gap-2 h-full">
+                <div class="flex-col gap-1 justify-center">
+                    <div class="glass-card" style="padding: 1.5rem;">
+                        <h3 style="color: #20C997; display: flex; align-items: center; gap: 10px;"><span style="background: rgba(32, 201, 151, 0.2); padding: 4px 10px; border-radius: 50%;">1</span> Mobile-First Strategy</h3>
+                        <p style="margin-top: 0.5rem; color: var(--text-secondary);">Design user journeys around the point of service: field agents, remote teams, and on-the-go executives.</p>
+                    </div>
+                    <div class="glass-card" style="padding: 1.5rem;">
+                        <h3 style="color: #20C997; display: flex; align-items: center; gap: 10px;"><span style="background: rgba(32, 201, 151, 0.2); padding: 4px 10px; border-radius: 50%;">2</span> CRM on Mobile</h3>
+                        <p style="margin-top: 0.5rem; color: var(--text-secondary);">Surface opportunities, approvals, cases, and dashboards in a secure, contextual mobile interface.</p>
+                    </div>
+                    <div class="glass-card" style="padding: 1.5rem;">
+                        <h3 style="color: #20C997; display: flex; align-items: center; gap: 10px;"><span style="background: rgba(32, 201, 151, 0.2); padding: 4px 10px; border-radius: 50%;">3</span> Real-Time Data Sync</h3>
+                        <p style="margin-top: 0.5rem; color: var(--text-secondary);">Connect Salesforce, REST APIs, and cloud backends with bi-directional sync and data governance.</p>
+                    </div>
+                    <div class="glass-card" style="padding: 1.5rem;">
+                        <h3 style="color: #20C997; display: flex; align-items: center; gap: 10px;"><span style="background: rgba(32, 201, 151, 0.2); padding: 4px 10px; border-radius: 50%;">4</span> Secure Architecture</h3>
+                        <p style="margin-top: 0.5rem; color: var(--text-secondary);">Role-based access controls, push notifications, encryption protocols, and full app lifecycle management.</p>
+                    </div>
+                </div>
+                <div class="flex-col justify-center align-center">
+                    <!-- Abstract Phone Mockup -->
+                    <div style="width: 250px; height: 500px; border: 4px solid var(--text-secondary); border-radius: 30px; background: var(--bg-primary); padding: 10px; position: relative; box-shadow: 0 20px 50px rgba(0,0,0,0.5);">
+                        <div style="width: 100%; height: 100%; background: var(--bg-secondary); border-radius: 20px; overflow: hidden; padding: 1rem;">
+                            <div style="height: 120px; background: rgba(0,180,216,0.2); border-radius: 10px; margin-bottom: 1rem;"></div>
+                            <div style="height: 60px; background: var(--card-bg); border-radius: 8px; margin-bottom: 10px;"></div>
+                            <div style="height: 60px; background: var(--card-bg); border-radius: 8px; margin-bottom: 10px;"></div>
+                            <div style="height: 60px; background: var(--card-bg); border-radius: 8px; margin-bottom: 10px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 7: AI & AUTOMATION -->
+        <div class="slide">
+            <h2 style="margin-top: 2rem;">AI-Powered Salesforce Operations</h2>
+            <p class="subtitle" style="margin-bottom: 1.5rem;">Adoptforce integrates the world's most powerful AI tools directly into Salesforce workflows — turning your CRM into an intelligent, proactive system of action.</p>
+            
+            <div class="grid-2 gap-2 h-full">
+                <div class="glass-card border-cyan">
+                    <h3 style="margin-bottom: 1rem; color: white;">Native Salesforce AI</h3>
+                    <ul style="list-style: none; padding: 0; color: var(--text-secondary);">
+                        <li style="margin-bottom: 0.8rem;"><strong>Einstein Copilot</strong> — Conversational AI embedded in UI</li>
+                        <li style="margin-bottom: 0.8rem;"><strong>Einstein GPT</strong> — Auto-generated emails and insights</li>
+                        <li style="margin-bottom: 0.8rem;"><strong>Einstein Analytics</strong> — Predictive forecasting</li>
+                        <li style="margin-bottom: 0.8rem;"><strong>Flow + Agentforce</strong> — Autonomous agent workflows</li>
+                    </ul>
+                </div>
+                <div class="glass-card border-red">
+                    <h3 style="margin-bottom: 1rem; color: white;">External AI Integration</h3>
+                    <ul style="list-style: none; padding: 0; color: var(--text-secondary);">
+                        <li style="margin-bottom: 0.8rem;"><strong>OpenAI API</strong> — Auto-generate content from records</li>
+                        <li style="margin-bottom: 0.8rem;"><strong>Claude</strong> — Contract review and support responses</li>
+                        <li style="margin-bottom: 0.8rem;"><strong>Google Gemini / MS Copilot</strong> — Workspace sync</li>
+                        <li style="margin-bottom: 0.8rem;"><strong>Gong.io / 6sense</strong> — Intel & predictive scoring</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="grid-4 mt-auto" style="margin-bottom: 2rem;">
+                <div class="glass-card" style="padding: 1rem; text-align: center;">
+                    <i data-lucide="briefcase" style="color: var(--accent-cyan); margin-bottom: 0.5rem;"></i>
+                    <div style="font-weight: 600;">Sales</div>
+                </div>
+                <div class="glass-card" style="padding: 1rem; text-align: center;">
+                    <i data-lucide="headphones" style="color: var(--accent-cyan); margin-bottom: 0.5rem;"></i>
+                    <div style="font-weight: 600;">Service</div>
+                </div>
+                <div class="glass-card" style="padding: 1rem; text-align: center;">
+                    <i data-lucide="pie-chart" style="color: var(--accent-cyan); margin-bottom: 0.5rem;"></i>
+                    <div style="font-weight: 600;">Marketing</div>
+                </div>
+                <div class="glass-card" style="padding: 1rem; text-align: center;">
+                    <i data-lucide="settings" style="color: var(--accent-cyan); margin-bottom: 0.5rem;"></i>
+                    <div style="font-weight: 600;">Operations</div>
+                </div>
+            </div>
+
+            <div class="slide-footer">We don't just implement Salesforce — we make it think.</div>
+        </div>
+
+        <!-- SLIDE 8: DIGITAL TRANSFORMATION APPROACH -->
+        <div class="slide">
+            <h2 style="margin-top: 2rem;">4-Step Transformation Journey</h2>
+            <p class="subtitle">A pragmatic delivery framework designed to discover value, shape the roadmap, build with confidence, and scale with intelligence.</p>
+            
+            <div class="grid-4 h-full align-center" style="margin-top: 2rem;">
+                <div class="flex-col align-center text-center">
+                    <div style="width: 80px; height: 80px; border-radius: 50%; background: rgba(0, 180, 216, 0.2); border: 2px solid var(--accent-cyan); display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: bold; color: var(--accent-cyan); margin-bottom: 1.5rem;">1</div>
+                    <h3 style="margin-bottom: 1rem;">DISCOVER</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">Business goals assessment · Current-state systems audit · Stakeholder alignment workshops · Data quality review</p>
+                </div>
+                <div class="flex-col align-center text-center">
+                    <div style="width: 80px; height: 80px; border-radius: 50%; background: rgba(32, 201, 151, 0.2); border: 2px solid #20C997; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: bold; color: #20C997; margin-bottom: 1.5rem;">2</div>
+                    <h3 style="margin-bottom: 1rem;">STRATEGIZE</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">Solution roadmap · Technical architecture design · Operating model definition · Risk and dependency mapping</p>
+                </div>
+                <div class="flex-col align-center text-center">
+                    <div style="width: 80px; height: 80px; border-radius: 50%; background: rgba(230, 57, 70, 0.2); border: 2px solid var(--accent-red); display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: bold; color: var(--accent-red); margin-bottom: 1.5rem;">3</div>
+                    <h3 style="margin-bottom: 1rem;">BUILD</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">Agile sprint delivery · Quality gates and testing protocols · User acceptance and enablement · Release management</p>
+                </div>
+                <div class="flex-col align-center text-center">
+                    <div style="width: 80px; height: 80px; border-radius: 50%; background: rgba(244, 162, 97, 0.2); border: 2px solid var(--accent-gold); display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: bold; color: var(--accent-gold); margin-bottom: 1.5rem;">4</div>
+                    <h3 style="margin-bottom: 1rem;">SCALE</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">Intelligent automation deployment · Managed services handover · Continuous optimization loops · Executive reporting</p>
+                </div>
+            </div>
+
+            <div class="slide-footer" style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 8px; text-align: center; border: 1px solid rgba(255,255,255,0.1);">Every phase is tied to measurable business outcomes: speed-to-value, adoption rates, data quality, revenue visibility, and operational efficiency.</div>
+        </div>
+
+        <!-- SLIDE 9: TECHNOLOGY STACK -->
+        <div class="slide">
+            <h2 style="margin-top: 2rem;">Technology Stack</h2>
+            <p class="subtitle">A modern, Salesforce-centered engineering ecosystem purpose-built for enterprise-grade digital products and integrations.</p>
+            
+            <div class="grid-2 gap-2 mt-auto" style="margin-bottom: 2rem;">
+                <div class="glass-card border-cyan">
+                    <h3 style="margin-bottom: 1rem; color: var(--accent-cyan);">Salesforce Ecosystem</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">Salesforce · Apex · Lightning Web Components · CPQ · Experience Cloud · Marketing Cloud · Agentforce · Einstein AI</p>
+                </div>
+                <div class="glass-card border-gold">
+                    <h3 style="margin-bottom: 1rem; color: var(--accent-gold);">Product Engineering</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">React · Node.js · Flutter · TypeScript · UI/UX Design Systems · Salesforce Mobile SDK · REST/GraphQL APIs</p>
+                </div>
+                <div class="glass-card border-teal">
+                    <h3 style="margin-bottom: 1rem; color: #20C997;">Cloud + Integration</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">AWS · Azure · REST APIs · Webhooks · Microservices Architecture · Data Sync · MuleSoft · Heroku</p>
+                </div>
+                <div class="glass-card border-red">
+                    <h3 style="margin-bottom: 1rem; color: var(--accent-red);">AI + Automation</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">OpenAI API · Claude API · Einstein GPT · Einstein Copilot · Gong · 6sense · n8n · Make · Zapier · Tableau CRM</p>
+                </div>
+            </div>
+
+            <div class="slide-footer">Built to connect CRM, cloud, mobile, and AI into one scalable, governed architecture.</div>
+        </div>
+
+        <!-- SLIDE 10: INDUSTRIES SERVED -->
+        <div class="slide">
+            <h2 style="margin-top: 2rem;">Industry Expertise</h2>
+            <p class="subtitle" style="margin-bottom: 2rem;">Deep domain knowledge across regulated, high-growth, and operations-intensive sectors — with Salesforce + AI patterns tailored to each.</p>
+            
+            <div class="grid-4 gap-1 h-full">
+                <div class="glass-card" style="padding: 1.5rem;">
+                    <div class="flex-row align-center mb-1"><i data-lucide="activity" style="color: var(--accent-cyan); margin-right: 10px;"></i> <strong>Healthcare</strong></div>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 10px;">Care coordination, HIPAA-compliant workflows, AI-assisted clinical service routing</p>
+                </div>
+                <div class="glass-card" style="padding: 1.5rem;">
+                    <div class="flex-row align-center mb-1"><i data-lucide="dollar-sign" style="color: var(--accent-gold); margin-right: 10px;"></i> <strong>FinTech</strong></div>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 10px;">Secure onboarding, revenue operations, AI-powered fraud alerting and analytics</p>
+                </div>
+                <div class="glass-card" style="padding: 1.5rem;">
+                    <div class="flex-row align-center mb-1"><i data-lucide="cloud" style="color: var(--accent-cyan); margin-right: 10px;"></i> <strong>SaaS</strong></div>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 10px;">AppExchange product development, AI-enhanced GTM operations, usage-based CRM</p>
+                </div>
+                <div class="glass-card" style="padding: 1.5rem;">
+                    <div class="flex-row align-center mb-1"><i data-lucide="shopping-bag" style="color: #20C997; margin-right: 10px;"></i> <strong>Retail</strong></div>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 10px;">Customer 360, service automation, AI-personalized mobile commerce experiences</p>
+                </div>
+                <div class="glass-card" style="padding: 1.5rem;">
+                    <div class="flex-row align-center mb-1"><i data-lucide="truck" style="color: var(--accent-gold); margin-right: 10px;"></i> <strong>Logistics</strong></div>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 10px;">Field mobility, real-time operations, AI-powered route and dispatch intelligence</p>
+                </div>
+                <div class="glass-card" style="padding: 1.5rem;">
+                    <div class="flex-row align-center mb-1"><i data-lucide="box" style="color: var(--accent-red); margin-right: 10px;"></i> <strong>Manufacturing</strong></div>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 10px;">Quote-to-cash, partner portals, AI-guided service visibility and predictive maintenance</p>
+                </div>
+                <div class="glass-card" style="padding: 1.5rem;">
+                    <div class="flex-row align-center mb-1"><i data-lucide="book" style="color: var(--accent-cyan); margin-right: 10px;"></i> <strong>Education</strong></div>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 10px;">Student lifecycle engagement, AI-driven support automation and digital experiences</p>
+                </div>
+                <div class="glass-card" style="padding: 1.5rem;">
+                    <div class="flex-row align-center mb-1"><i data-lucide="shield" style="color: #20C997; margin-right: 10px;"></i> <strong>Insurance</strong></div>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 10px;">Policy workflows, agent portals, AI-accelerated claims triage and automation</p>
+                </div>
+            </div>
+
+            <div class="slide-footer">Salesforce + AI patterns adapted to every market structure and operating model.</div>
+        </div>
+
+        <!-- SLIDE 11: CASE STUDIES -->
+        <div class="slide">
+            <h2 style="margin-top: 2rem;">Client Success Stories</h2>
+            <p class="subtitle">Representative engagements showing how Adoptforce converts complex business challenges into scalable, measurable Salesforce outcomes.</p>
+            
+            <div class="grid-3 gap-2 mt-auto">
+                <div class="glass-card" style="padding: 0; overflow: hidden;">
+                    <div style="background: var(--bg-secondary); padding: 1rem 1.5rem; border-bottom: 1px solid var(--card-border); font-weight: 700;">SaaS AppExchange Launch</div>
+                    <div style="padding: 1.5rem;">
+                        <p style="font-size: 0.9rem; margin-bottom: 1rem;"><strong style="color: var(--text-primary);">Challenge:</strong> A SaaS company needed a packaged Salesforce distribution channel with rapid launch readiness and security review compliance.</p>
+                        <p style="font-size: 0.9rem; margin-bottom: 1.5rem;"><strong style="color: var(--text-primary);">Solution:</strong> Architected a managed package with Lightning UX, Apex services, API integrations, and a full AppExchange security review preparation process.</p>
+                        <ul style="font-size: 0.85rem; color: var(--accent-cyan); list-style: none; padding: 0;">
+                            <li>✓ MVP launch-ready in 12 weeks</li>
+                            <li>✓ Scalable packaging architecture</li>
+                            <li>✓ Significant reduction in per-client implementation effort</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="glass-card" style="padding: 0; overflow: hidden;">
+                    <div style="background: #0D2B4D; padding: 1rem 1.5rem; border-bottom: 1px solid var(--card-border); font-weight: 700;">GTM + CRM Optimization</div>
+                    <div style="padding: 1.5rem;">
+                        <p style="font-size: 0.9rem; margin-bottom: 1rem;"><strong style="color: var(--text-primary);">Challenge:</strong> Sales leadership had no pipeline visibility, inconsistent lead routing, and fragmented RevOps reporting across teams.</p>
+                        <p style="font-size: 0.9rem; margin-bottom: 1.5rem;"><strong style="color: var(--text-primary);">Solution:</strong> Full CRM redesign with automated lead management, executive dashboards, sales enablement workflows, and forecasting hygiene protocols.</p>
+                        <ul style="font-size: 0.85rem; color: var(--accent-cyan); list-style: none; padding: 0;">
+                            <li>✓ Cleaner revenue forecasting</li>
+                            <li>✓ Improved sales response discipline</li>
+                            <li>✓ Repeatable, scalable customer acquisition engine</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="glass-card" style="padding: 0; overflow: hidden;">
+                    <div style="background: #103B31; padding: 1rem 1.5rem; border-bottom: 1px solid var(--card-border); font-weight: 700;">Mobile Field CRM + AI Automation</div>
+                    <div style="padding: 1.5rem;">
+                        <p style="font-size: 0.9rem; margin-bottom: 1rem;"><strong style="color: var(--text-primary);">Challenge:</strong> Field operations teams needed secure CRM access, offline-capable workflows, and real-time operational intelligence in the field.</p>
+                        <p style="font-size: 0.9rem; margin-bottom: 1.5rem;"><strong style="color: var(--text-primary);">Solution:</strong> Custom mobile application with Salesforce integration, offline sync, AI-guided next-best-action prompts, push alerts, and role-based access controls.</p>
+                        <ul style="font-size: 0.85rem; color: var(--accent-cyan); list-style: none; padding: 0;">
+                            <li>✓ Faster field data capture</li>
+                            <li>✓ Fewer manual CRM updates</li>
+                            <li>✓ Stronger frontline customer service responsiveness</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide-footer" style="font-style: italic; font-size: 0.85rem;">Metrics shown are representative. Named client results available upon request during formal engagement discussions.</div>
+        </div>
+
+        <!-- SLIDE 12: ENGAGEMENT MODEL -->
+        <div class="slide">
+            <h2 style="margin-top: 2rem;">How We Work Together</h2>
+            <p class="subtitle">Flexible partnership structures designed to meet clients where they are — from strategic advisory to full-cycle delivery and long-term managed services.</p>
+            
+            <div class="grid-4 gap-1 h-full align-center" style="margin-bottom: 2rem;">
+                <div class="glass-card border-cyan">
+                    <h3 style="margin-bottom: 1rem; color: white;">1. Dedicated Teams</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary);">Persistent cross-functional delivery pods aligned to product, CRM, or transformation roadmaps. Full sprint cadence and executive visibility.</p>
+                </div>
+                <div class="glass-card border-cyan">
+                    <h3 style="margin-bottom: 1rem; color: white;">2. Staff Augmentation</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary);">On-demand access to Salesforce architects, developers, admins, QA engineers, UI/UX designers, and mobile specialists.</p>
+                </div>
+                <div class="glass-card border-cyan">
+                    <h3 style="margin-bottom: 1rem; color: white;">3. End-to-End Delivery</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary);">Full-cycle ownership from discovery through deployment — with governance, sprint management, quality gates, and hypercare.</p>
+                </div>
+                <div class="glass-card border-cyan">
+                    <h3 style="margin-bottom: 1rem; color: white;">4. Consulting Partnership</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary);">Strategic advisory covering architecture decisions, GTM/RevOps design, AI strategy, and roadmap acceleration.</p>
+                </div>
+            </div>
+
+            <div class="glass-card" style="padding: 1.5rem; text-align: center; margin-bottom: 2rem;">
+                <strong style="color: var(--accent-gold);">Delivery Governance:</strong> Clear RACI frameworks · Sprint visibility · RAID log management · Executive-level communication · Full documentation ownership
+            </div>
+
+            <div class="slide-footer">Flexible enough for pilots. Rigorous enough for enterprise transformation.</div>
+        </div>
+
+        <!-- SLIDE 13: SALESFORCE CERTIFICATIONS -->
+        <div class="slide">
+            <h2 style="margin-top: 2rem;">Salesforce Certifications & Enterprise Expertise</h2>
+            <p class="subtitle">Our team holds the industry's most comprehensive certification portfolio — spanning every Salesforce cloud, architecture tier, and specialty domain.</p>
+            
+            <div class="flex-col justify-center h-full gap-2">
+                <div>
+                    <h3 style="color: var(--accent-cyan); font-size: 1rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.1em;">Consultant Track</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <span class="badge">Sales Cloud</span> <span class="badge">Service Cloud</span> <span class="badge">Experience Cloud</span>
+                        <span class="badge">Marketing Cloud</span> <span class="badge">Pardot</span> <span class="badge">Education Cloud</span> <span class="badge">Nonprofit Cloud</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 style="color: var(--accent-cyan); font-size: 1rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.1em;">Developer & Admin Track</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <span class="badge">CPQ Specialist</span> <span class="badge">Platform App Builder</span> <span class="badge">Administrator</span>
+                        <span class="badge">Advanced Administrator</span> <span class="badge">Marketing Cloud Admin</span> <span class="badge">Email Specialist</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 style="color: var(--accent-cyan); font-size: 1rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.1em;">Architect Track</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <span class="badge gold">Application Architect</span> <span class="badge gold">Data Architect</span> <span class="badge gold">Sharing & Visibility</span>
+                        <span class="badge gold">Lifecycle & Deployment</span> <span class="badge gold">B2B Solution Architect</span>
+                        <span class="badge gold">Platform Dev I</span> <span class="badge gold">Platform Dev II</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 style="color: var(--accent-cyan); font-size: 1rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.1em;">Specialist & Accredited</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <span class="badge">UX Designer</span> <span class="badge">Marketing Cloud Dev</span> <span class="badge">Business Analyst</span>
+                        <span class="badge">AI Associate</span> <span class="badge">Salesforce CMS</span> <span class="badge">Pardot Analytics</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide-footer">Every engagement is backed by certified expertise — not generalist knowledge.</div>
+        </div>
+
+        <!-- SLIDE 14: FUTURE VISION -->
+        <div class="slide" style="background: radial-gradient(circle at center, rgba(0, 180, 216, 0.1) 0%, var(--bg-primary) 70%);">
+            <h2 style="margin-top: 2rem; text-align: center;">Where We Are Headed</h2>
+            <p class="subtitle" style="text-align: center; margin: 0 auto 3rem auto;">Adoptforce is actively positioning to lead the next frontier — helping enterprises transition from passive CRM systems of record to proactive, AI-powered systems of action.</p>
+            
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; max-width: 1000px; margin: 0 auto;">
+                <div class="glass-card" style="width: 45%; border-color: rgba(0, 180, 216, 0.5); box-shadow: 0 0 20px rgba(0, 180, 216, 0.1);">
+                    <h3 style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;"><i data-lucide="bot" style="color: var(--accent-cyan);"></i> AI Innovation</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary);">Embed AI agents directly into Salesforce workflows. Multi-model orchestration using OpenAI, Claude, and Gemini for autonomous tasks.</p>
+                </div>
+                <div class="glass-card" style="width: 45%; border-color: rgba(0, 180, 216, 0.5); box-shadow: 0 0 20px rgba(0, 180, 216, 0.1);">
+                    <h3 style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;"><i data-lucide="layers" style="color: var(--accent-cyan);"></i> Next-Gen CRM</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary);">Composable, API-first CRM experiences with smarter data models, unified customer data platforms (CDP), and predictive automation.</p>
+                </div>
+                <div class="glass-card" style="width: 45%; border-color: rgba(0, 180, 216, 0.5); box-shadow: 0 0 20px rgba(0, 180, 216, 0.1);">
+                    <h3 style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;"><i data-lucide="zap" style="color: var(--accent-cyan);"></i> Intelligent Automation</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary);">Autonomous multi-step workflows with real-time alerting, dynamic routing, AI-based anomaly detection, and self-healing loops.</p>
+                </div>
+                <div class="glass-card" style="width: 45%; border-color: rgba(0, 180, 216, 0.5); box-shadow: 0 0 20px rgba(0, 180, 216, 0.1);">
+                    <h3 style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;"><i data-lucide="smartphone" style="color: var(--accent-cyan);"></i> Enterprise Mobility 2.0</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary);">AI-enhanced mobile-first field experiences connected to Salesforce, cloud backends, IoT data streams, and operational intelligence.</p>
+                </div>
+            </div>
+
+            <div class="slide-footer" style="text-align: center; font-size: 1.25rem; font-weight: 700; color: white; border: none; margin-top: 3rem;">
+                "The next wave of enterprise value will emerge at the intersection of Salesforce data, mobile experiences, and AI automation. Adoptforce is building that intersection — today."
+            </div>
+        </div>
+
+        <!-- SLIDE 15: WHY ADOPTFORCE (DIFFERENTIATORS) -->
+        <div class="slide">
+            <h2 style="margin-top: 2rem;">Why Choose Adoptforce</h2>
+            <p class="subtitle">Enterprise-grade delivery capability with the speed and agility to help your team launch, iterate, and scale — without slowing the business.</p>
+            
+            <div class="grid-3 gap-2" style="margin-bottom: 2rem; text-align: center;">
+                <div><div class="stat-number" style="font-size: 3rem;">40+</div><div class="stat-label">Clients</div></div>
+                <div><div class="stat-number" style="font-size: 3rem;">100+</div><div class="stat-label">Projects</div></div>
+                <div><div class="stat-number" style="font-size: 3rem;">400+</div><div class="stat-label">Years Exp.</div></div>
+            </div>
+
+            <div class="grid-3 gap-1 h-full">
+                <div class="glass-card">
+                    <h3 style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 8px;"><i data-lucide="award" style="color: var(--accent-gold);"></i> Deep Expertise</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary);">Certified delivery patterns across every major cloud, configuration layer, and custom development track.</p>
+                </div>
+                <div class="glass-card">
+                    <h3 style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 8px;"><i data-lucide="rocket" style="color: var(--accent-red);"></i> Faster Time-to-Market</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary);">Agile execution methodology, reusable accelerator assets, focused MVP scoping, and disciplined launch.</p>
+                </div>
+                <div class="glass-card">
+                    <h3 style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 8px;"><i data-lucide="shield-check" style="color: var(--accent-cyan);"></i> Scalable Architecture</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary);">API-first design thinking, secure data models, and extensible product architecture built for long-term growth.</p>
+                </div>
+                <div class="glass-card">
+                    <h3 style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 8px;"><i data-lucide="heart-handshake" style="color: #20C997;"></i> Dedicated Support</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary);">Managed services, user training, release support, and continuous improvement ownership — not a hand-off culture.</p>
+                </div>
+                <div class="glass-card" style="grid-column: span 2;">
+                    <h3 style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 8px;"><i data-lucide="refresh-cw" style="color: var(--accent-cyan);"></i> End-to-End Ownership</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary);">Strategy · Architecture · Development · Adoption · Support · Optimization — all under a single, accountable operating model.</p>
+                </div>
+            </div>
+
+            <div class="slide-footer">Client-focused. Innovation-driven. Built for long-term partnership.</div>
+        </div>
+
+        <!-- SLIDE 16: CLOSING / CTA -->
+        <div class="slide flex-col justify-center align-center" style="text-align: center;">
+            <div style="position: absolute; right: 0; top: 0; width: 50%; height: 100%; background: radial-gradient(circle at 100% 50%, rgba(0, 180, 216, 0.2) 0%, transparent 70%); z-index: -1;"></div>
+            
+            <h1 style="max-width: 900px; margin: 0 auto 1.5rem auto;">Let's Build the Future Together</h1>
+            <p class="subtitle" style="margin: 0 auto 3rem auto; font-size: 1.5rem;">Transform your Salesforce investment, mobile products, GTM execution, and AI automation into measurable, compounding business growth.</p>
+            
+            <div class="glass-card" style="width: 100%; max-width: 500px; margin: 0 auto 4rem auto; text-align: left; background: rgba(10, 15, 30, 0.8);">
+                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 1.5rem;">
+                    <i data-lucide="globe" style="color: var(--accent-cyan);"></i>
+                    <span style="font-size: 1.1rem; font-weight: 600;">adoptforce.com</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 1.5rem;">
+                    <i data-lucide="mail" style="color: var(--accent-cyan);"></i>
+                    <span style="font-size: 1.1rem; font-weight: 600;">support@adoptforce.com</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <i data-lucide="linkedin" style="color: var(--accent-cyan);"></i>
+                    <span style="font-size: 1.1rem; font-weight: 600;">linkedin.com/company/adoptforce</span>
+                </div>
+            </div>
+
+            <div style="font-size: 1.25rem; font-weight: 700; color: var(--text-secondary); max-width: 800px; margin: 0 auto;">
+                "Strategic technology partner for scalable Salesforce solutions, AppExchange products, mobile-first experiences, and intelligent AI automation."
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
