@@ -1,3 +1,4 @@
+html { font-size: 65%; }
 :root {
   --bg-primary: #0A0F1E;
   --bg-secondary: #0D1B2A;
@@ -26,7 +27,7 @@ body {
   color: var(--text-primary);
   overflow: hidden; /* We'll control scrolling/sliding via JS */
   line-height: 1.6;
-  font-size: 16px;
+  font-size: 10.4px; /* 65% zoom out */
 }
 
 /* Background Animation */
