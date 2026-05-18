@@ -298,3 +298,29 @@ h2 {
   z-index: 100;
   transition: width 0.3s ease;
 }
+
+/* Extracted Images / Placeholders */
+.slide-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.slide-image {
+  max-width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--card-border);
+  background: var(--card-bg);
+}
+
+.slide-image.hero {
+  max-height: 500px;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
